@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+</head>
+<body>
+   <div id="capaLogin" class="ventana-login">
+        <div id="loginContainer" class="login-container">
+            <h1>Ingresa con tu ceunta</h1><br>
+            <form id="formLogin">
+				<input type="email" name="email" placeholder="Email" required>
+				<input type="password" name="pass" placeholder="Password" required>
+				<input type="submit" name="login" class="login login-submit" value="Login" onclick="abreVentana()">
+            </form>
+            <div class="social-login">
+                <button id="btn-facebook" class="socialBtn"  type="button" onclick="abreUrl()"><span><i class="fab fa-facebook"></i> Sigue con Facebook</span> </button>
+                <button id="btn-google" class="socialBtn" type="button" onclick="abreUrl()"><span><i class="fab fa-google-plus-g"></i>Sigue con Google</span> </button>
+   
+            </div>
+					
+			<div class="login-help">
+				<span>No tienes cuenta <a href="#" onclick="abreVentana()">Registrate</a></span> - <a href="#" onclick="abreUrl()">Olvidaste la Contraseña </a>
+            </div>
+		</div>
+    </div>  
+</body>
+<script src="login.js"></script>
+</html>
